@@ -48,7 +48,7 @@ class ShoppingListActivity : AppCompatActivity() {
         return if (etProduct.text.toString().isNotBlank() && etQuantity.text.toString().isNotBlank()) {
             true
         } else {
-            Toast.makeText(this, "Please fill in the fields", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, resources.getString(R.string.error_empty_fields), Toast.LENGTH_SHORT).show()
             false
         }
     }
